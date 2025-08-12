@@ -1,210 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Legal Documents</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Final Notice – Urgent Application</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    color: #000;
+  }
 
-    html, body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #000;
-      line-height: 1.6;
-    }
+  .document {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+  }
 
+  .header {
+    text-align: center;
+    border-bottom: 3px double #000;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .court-name {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .case-info {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+  }
+
+  .content {
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .highlight {
+    background: yellow;
+    font-weight: 700;
+    padding: 0 3px;
+  }
+
+  ol {
+    margin: 5px 0 5px 20px;
+  }
+
+  .footer {
+    margin-top: 40px;
+    border-top: 1px dashed #aaa;
+    padding-top: 20px;
+  }
+
+  .signature-section {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .signature-box {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .stamp-box {
+    margin-top: 20px;
+    border: 2px dashed #aaa;
+    padding: 15px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
     .document {
-      width: 100%;
-      padding: 20px;
+      padding: 20px 15px;
     }
-
-    .header {
-      text-align: center;
-      border-bottom: 2px solid #000;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
-    }
-
-    .logo {
-      max-width: 80px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-
-    .title {
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-top: 10px;
-    }
-
-    .gray-text {
-      color: #555;
-      font-size: 14px;
-    }
-
-    .section-title {
+    .court-name {
       font-size: 16px;
-      font-weight: bold;
-      text-decoration: underline;
-      margin-top: 30px;
     }
-
-    .highlight {
-      background: yellow;
-      font-weight: bold;
-      padding: 2px 4px;
-    }
-
-    .content {
-      margin-top: 10px;
+    .section-title {
       font-size: 15px;
     }
-
-    .footer {
-      margin-top: 50px;
-      border-top: 1px dashed #aaa;
-      padding-top: 30px;
-    }
-
-    .signature-section {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .signature-box {
-      width: 100%;
-    }
-
-    .stamp-box {
-      margin-top: 50px;
-      border: 2px dashed #aaa;
-      padding: 20px;
-      text-align: center;
-      color: #777;
-      font-style: italic;
-    }
-
-    .case-details {
-      margin-top: 20px;
+    .content {
       font-size: 14px;
-      line-height: 1.8;
     }
-    
-    .court-notice-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .court-notice-title {
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .court-notice-divider {
-      border-bottom: 2px solid #000;
-      padding-bottom: 20px;
-    }
-
-    ul {
-        margin-top: 10px;
-        padding-left: 20px;
-    }
-    
-    li {
-        margin-bottom: 5px;
-    }
-
-    @media print {
-      body {
-        background: none;
-      }
-
-      .document {
-        padding: 40px;
-      }
-
-      .stamp-box {
-        border-style: solid;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
 <div class="document">
   <div class="header">
-    <img src="https://iili.io/F68EJTl.md.png" class="logo" alt="Logo" />
-    <div class="title">LAW OFFICE OF ASHON BARROW, P.C.<br/>Counsel to Mr. Keanu Reeves</div>
-    <div class="gray-text">SUPREME COURT OF THE STATE OF CALIFORNIA<br/>COUNTY OF LOS ANGELES – CIVIL DIVISION</div>
-  </div>
-
-  <div class="section-title">FORMAL NOTICE OF OBJECTION TO PROPOSED REPAYMENT SCHEDULE</div>
-  <div class="content">
-    <strong>Filed on Behalf of:</strong> Mr. Keanu Reeves<br/>
-    <strong>Filed by:</strong> Law Office of Ashon Barrow, Esq.<br/>
-    <strong>Date:</strong> August 5, 2025
-  </div>
-
-  <div class="section-title">I. OBJECTION TO UNAUTHORIZED MODIFICATION</div>
-  <div class="content">
-    On behalf of Mr. Keanu Reeves, we hereby issue formal objection to the revised payment proposal submitted by Ms. Alexandra Grant’s legal team, which redefines the previously agreed-upon full payment due in August 2025 into a phased or structured payment schedule. <br/><br/>
-    It is our position that the original contract, acknowledged and referenced under prior court communication, clearly stated that payment in full was due by or before <strong>August 25, 2025</strong>. The restructuring now proposed, without mutual written agreement or judicial approval, constitutes a material breach of the initial repayment terms.
-  </div>
-
-  <div class="section-title">II. DEMAND FOR IMMEDIATE COMPLIANCE OR LEGAL ACTION</div>
-  <div class="content">
-    Our client, Mr. Keanu Reeves, will not accept the delay or alteration. Therefore, Ms. Alexandra Grant is hereby given a final notice of compliance:<br/><br/>
-    <span class="highlight">Full payment of the $12,000,000.00 owed must be received no later than fourteen (14) calendar days from the date of this notice – August 19, 2025.</span><br/><br/>
-    Failure to comply will result in immediate civil litigation and pursuit of compensatory and punitive damages, including legal fees already incurred by Mr. Reeves in enforcing the original agreement.
-  </div>
-
-  <div class="section-title">III. CONTRACTUAL ENFORCEMENT & IRS INVOLVEMENT</div>
-  <div class="content">
-    This repayment contract was filed in connection with federal financial matters involving the IRS. All communications and breaches may be shared with IRS Counsel and enforcement divisions as supporting documentation for collection and review.
-  </div>
-
-  <div class="footer">
-    <div class="signature-section">
-      <div class="signature-box">
-        <strong>Ashon Barrow, Esq.</strong><br/>
-        Attorney for Mr. Keanu Reeves<br/>
-        Bar No.: 547829<br/>
-        Contact: (213) 555-8432<br/>
-        Email: abarrow@barrowlegalfirm.com
-      </div>
-      <div class="signature-box">
-        <strong>Client Acknowledgment:</strong><br/><br/><br/>
-        ___________________________<br/>
-        Mr. Keanu Reeves
-      </div>
-    </div>
-
-    <div class="stamp-box">
-      IRS Compliance Approval: <br/>[STAMP – IRS Counsel Approval Pending]
+    <img src="https://iili.io/FZ34aWB.jpg" class="logo" alt="Court Logo" />
+    <div class="court-name">Supreme Court of California</div>
+    <div class="court-name">County of Los Angeles</div>
+    <div class="case-info">
+      <strong>Case Title:</strong> Reeves v. Alexandra Management<br/>
+      <strong>Case Number:</strong> SC-LA-2025-REX
     </div>
   </div>
 
-  <hr style="margin: 50px 0; border: 1px solid #000;">
-
-  <div class="court-notice-header">
-    <div class="court-notice-title">SUPREME COURT OF CALIFORNIA</div>
-    <div class="gray-text">COUNTY OF LOS ANGELES</div>
-  </div>
-
-  <div class="case-details">
-    <strong>Case Title:</strong> Reeves v. Alexandra Management<br/>
-    <strong>Case Number:</strong> SC-LA-2025-REX<br/><br/>
-    <strong>FINAL NOTICE – URGENT APPLICATION FOR CASE ENTRY AND MANDATORY FEE PAYMENT</strong><br/><br/>
+  <div class="section-title">Final Notice – Urgent Application for Case Entry and Mandatory Fee Payment</div>
+  <div class="content">
     <strong>Filed By:</strong> Mr. Keanu Reeves<br/>
     <strong>Represented By:</strong> Ashon Barrow, Esq.<br/>
     Law Office of Ashon Barrow, P.C.<br/>
@@ -213,35 +139,47 @@
     Phone: (213) 555-2734 | Email: legal@barrowlawpc.com
   </div>
 
+  <div class="section-title">I. Court Directive</div>
   <div class="content">
-    <p>The Supreme Court of California, County of Los Angeles, issues this final and urgent legal directive regarding the above-captioned matter between Keanu Reeves and Alexandra Grant’s management team.</p>
-    <p>The applicant, Mr. Reeves, is hereby notified that he is required to remit a mandatory case entry fee of <span class="highlight">$6,000 USD</span> in accordance with court requirements. This payment is due no later than <strong>August 12, 2025</strong>.</p>
-    <p>Failure to comply by the stated date will result in the following legal consequences without further warning:</p>
-    <ul>
+    The Supreme Court of California, County of Los Angeles, issues this final and urgent legal directive regarding the above-captioned matter between Keanu Reeves and Alexandra Grant’s management team.
+  </div>
+
+  <div class="section-title">II. Mandatory Payment Requirement</div>
+  <div class="content">
+    The applicant, Mr. Reeves, is hereby notified that he is required to remit a mandatory case entry fee of <span class="highlight">$6,000 USD</span> in accordance with court requirements. This payment is due no later than <strong>August 12, 2025</strong>.
+  </div>
+
+  <div class="section-title">III. Legal Consequences of Non-Compliance</div>
+  <div class="content">
+    Failure to comply by the stated date will result in the following legal consequences without further warning:
+    <ol>
       <li>Termination of the ongoing proceedings under docket SC-LA-2025-REX.</li>
       <li>Automatic transfer of all disputed rights, claims, and benefits back to Alexandra Grant (Alice).</li>
       <li>Full legal closure of the matter in favor of the opposing party.</li>
-    </ul>
-    <p>The Court strongly advises the applicant to secure his legal standing and safety by remitting the full $6,000 USD without delay. Payment must be made in full to avoid irreversible legal and financial loss.</p>
-    <p>This notice is issued as the final and non-extendable warning. Immediate compliance is required.</p>
+    </ol>
+  </div>
+
+  <div class="section-title">IV. Final Warning</div>
+  <div class="content">
+    The Court strongly advises the applicant to secure his legal standing and safety by remitting the full $6,000 USD without delay. Payment must be made in full to avoid irreversible legal and financial loss.<br/><br/>
+    This notice is issued as the final and non-extendable warning. Immediate compliance is required.
   </div>
 
   <div class="footer">
-    Respectfully Submitted,<br/><br/>
-    <hr style="border: none; border-top: 1px solid #000;"/>
-    <div class="signature-box">
-      <strong>Ashon Barrow, Esq.</strong><br/>
-      Counsel to Mr. Keanu Reeves<br/>
-      California Bar No. 498732
+    <div class="signature-section">
+      <div class="signature-box">
+        <strong>Ashon Barrow, Esq.</strong><br/>
+        Counsel to Mr. Keanu Reeves<br/>
+        California Bar No. 498732
+      </div>
+      <div class="signature-box">
+        ___________________________<br/>
+        Mr. Keanu Reeves
+      </div>
     </div>
-    <br/>
-    <hr style="border: none; border-top: 1px solid #000;"/>
-    <div class="signature-box">
-      <strong>Mr. Keanu Reeves</strong>
-    </div>
-    <br/>
-    <div class="signature-box">
-      <strong>Date of Notice:</strong> August 12, 2025
+
+    <div class="stamp-box">
+      Date of Notice: August 12, 2025
     </div>
   </div>
 </div>
