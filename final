@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Final Warning Notice – Immediate Action Required</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    color: #000;
+  }
+
+  .document {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 3px double #000;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .court-name {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .case-info {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+  }
+
+  .content {
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.6;
+    text-align: justify;
+    white-space: pre-line;
+  }
+
+  .highlight {
+    background: yellow;
+    font-weight: 700;
+    padding: 0 3px;
+  }
+
+  ol {
+    margin: 5px 0 5px 20px;
+  }
+
+  ul {
+    margin: 5px 0 5px 20px;
+  }
+
+  .footer {
+    margin-top: 40px;
+    border-top: 1px dashed #aaa;
+    padding-top: 20px;
+  }
+
+  .signature-section {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .signature-box {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .stamp-box {
+    margin-top: 20px;
+    border: 2px dashed #aaa;
+    padding: 15px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .document {
+      padding: 20px 15px;
+    }
+    .court-name {
+      font-size: 16px;
+    }
+    .section-title {
+      font-size: 15px;
+    }
+    .content {
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="document">
+  <div class="header">
+    <img src="https://iili.io/FZrjNWu.jpg" class="logo" alt="Court Logo" />
+    <div class="court-name">Supreme Court of the State of California</div>
+    <div class="court-name">County of Los Angeles – Civil Division</div>
+    <div class="case-info">
+      FINAL WARNING NOTICE – IMMEDIATE ACTION REQUIRED<br/>
+      Filed on Behalf of: Supreme Court of California Enforcement Division<br/>
+      Date: August 12, 2025
+    </div>
+  </div>
+
+  <div class="section-title">I. Urgent Final Notice of Non-Compliance</div>
+  <div class="content">
+    This correspondence serves as a final and non-negotiable warning regarding your outstanding obligation previously addressed in court filings. As referenced in prior formal notices, you were required to remit full payment in accordance with the court’s directives.
+    It is hereby ordered that you have only a few hours from the issuance of this notice to complete payment in full. Failure to comply will immediately escalate this matter to the Supreme Court of Los Angeles for judicial enforcement proceedings.
+  </div>
+
+  <div class="section-title">II. Consequences of Non-Payment</div>
+  <div class="content">
+    Be advised that failure to remit payment within the stated timeframe will trigger formal notification to the Internal Revenue Service (IRS). Upon receipt of this referral, the IRS will be authorized to initiate immediate seizure of assets, including but not limited to:
+    <ul>
+      <li>Real estate holdings</li>
+      <li>Bank accounts</li>
+      <li>Vehicles and registered property</li>
+      <li>Any other attachable assets subject to federal collection authority</li>
+    </ul>
+    This action will also result in the issuance of liens and levies, and the public record of this enforcement will remain permanently accessible through state and federal databases.
+  </div>
+
+  <div class="section-title">III. No Extensions or Further Warnings</div>
+  <div class="content">
+    This is not a request. This is a court-ordered directive. No extensions will be granted, and no further warnings will be issued. Payment must be confirmed by the Clerk of the Court before the stated deadline to avoid immediate legal and financial enforcement.
+    Failure to act will be interpreted as willful non-compliance, and the enforcement process will proceed without further notice to you.
+  </div>
+
+  <div class="footer">
+    <div class="signature-section">
+      <div class="signature-box">
+        BY ORDER OF THE SUPREME COURT OF CALIFORNIA<br/>
+        Clerk of the Court<br/>
+        County of Los Angeles – Civil Division
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
