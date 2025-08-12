@@ -20,12 +20,12 @@
   }
 
   .document {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 50px;
+    max-width: 700px;        /* Tablet width */
+    margin: 20px auto;       /* Center horizontally with vertical margin */
+    padding: 40px 35px;      /* Good padding for tablets */
     background: #fff;
     border: 1px solid #ddd;
-    font-size: 15px;
+    font-size: 17px;         /* Slightly larger font for tablet */
   }
 
   .header {
@@ -36,72 +36,72 @@
   }
 
   .logo {
-    max-width: 100px;
+    max-width: 90px;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 12px;
   }
 
   .court-name {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   .section {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   .section-title {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
-    padding-bottom: 4px;
-    margin-bottom: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
   }
 
   .content p {
-    margin: 10px 0;
+    margin: 12px 0;
     text-align: justify;
   }
 
   .content ul {
-    margin-left: 25px;
+    margin-left: 30px;
   }
 
   .signature-block {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .signature {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .divider {
-    margin: 15px 0;
+    margin: 20px 0;
     border-bottom: 1px solid #999;
   }
 
   .cc-list {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .cc-list ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   .footer {
-    margin-top: 60px;
+    margin-top: 70px;
     border-top: 1px dashed #aaa;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   .signature-section {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
     margin-top: 40px;
   }
 
@@ -110,12 +110,13 @@
   }
 
   .stamp-box {
-    margin-top: 50px;
+    margin-top: 55px;
     border: 2px dashed #aaa;
-    padding: 20px;
+    padding: 22px;
     text-align: center;
     color: #777;
     font-style: italic;
+    font-size: 15px;
   }
 
   @media print {
@@ -125,6 +126,7 @@
     .document {
       border: none;
       padding: 50px;
+      max-width: 100%;
     }
     .stamp-box {
       border-style: solid;
