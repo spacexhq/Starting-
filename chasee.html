@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Statement</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #000;
+    }
+    .statement-container {
+      max-width: 8.5in;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .statement {
+      padding: 0.75in;
+      border: none;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #003366;
+    }
+    .logo-section img {
+      height: 45px;
+      width: auto;
+    }
+    .bank-details {
+      text-align: right;
+      font-size: 11px;
+      line-height: 1.3;
+      color: #333;
+    }
+    .bank-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+    .statement-header {
+      text-align: center;
+      margin: 25px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border-left: 4px solid #003366;
+    }
+    .statement-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #003366;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .statement-subtitle {
+      font-size: 12px;
+      color: #666;
+      margin: 5px 0 0 0;
+    }
+    .info-section {
+      margin-bottom: 25px;
+    }
+    .section-header {
+      background: #003366;
+      color: white;
+      padding: 8px 15px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 0 0 1px 0;
+    }
+    .section-content {
+      padding: 15px;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    .amount-highlight {
+      font-weight: bold;
+      color: #003366;
+      font-size: 12px;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 11px;
+    }
+    .data-table th {
+      background: #003366;
+      color: white;
+      padding: 10px 8px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .data-table td {
+      padding: 8px;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    .data-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .label-cell {
+      font-weight: bold;
+      background: #f0f0f0 !important;
+      width: 30%;
+    }
+    .footer-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      font-size: 10px;
+      text-align: center;
+      color: #555;
+    }
+    .important-notice {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      padding: 10px;
+      margin: 15px 0;
+      font-size: 10px;
+      color: #856404;
+    }
+    .reference-info {
+      text-align: right;
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      font-size: 80px;
+      color: rgba(0, 51, 102, 0.05);
+      font-weight: bold;
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="watermark">CONFIDENTIAL</div>
+
+  <div class="statement-container">
+    <div class="statement">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="logo-section">
+          <img src="https://iili.io/FmZYjIf.png" alt="FinBank Logo">
+        </div>
+        <div class="bank-details">
+          <div class="bank-name">CHASE BANK – MANAGEMENT OFFICE</div>
+          Legal & Compliance Division<br>
+          707 Wish Fu Blvd, 7th Floor<br>
+          Culver City, CA 90232<br>
+          Phone: (213) 633-58691<br>
+          Email: legoffice@chasemail.com
+        </div>
+      </div>
+
+```
+  <!-- Reference Information -->
+  <div class="reference-info">
+    DATE: August 20, 2025<br>
+    TO: Wire Operations – National Australia Bank<br>
+    ATTN: Compliance Division
+  </div>
+
+  <!-- Statement Title -->
+  <div class="statement-header">
+    <h1 class="statement-title">Urgent Compliance Action Required</h1>
+    <p class="statement-subtitle">Incoming Wire Transfer Ref: CHB-482016/INTL</p>
+  </div>
+
+  <!-- Directive Information -->
+  <div class="info-section">
+    <div class="section-header">Subject</div>
+    <div class="section-content">
+      <strong>Dear Compliance Officer,</strong><br><br>
+      This notice concerns an international wire transfer initiated by Ms. Patricia Taylor from Chase Bank Los Angeles in the amount of <span class="amount-highlight">USD $30,000.00</span> (approx. <span class="amount-highlight">AUD $59,840.00</span>).
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div class="info-section">
+    <div class="section-header">Beneficiary Details</div>
+    <div class="section-content">
+      • Name: <strong>Pamela Trevean</strong><br>
+      • BSB: <strong>083 451</strong><br>
+      • Account Number: <strong>984 201 621</strong><br>
+      • Bank: <strong>National Australia Bank, Australia</strong>
+    </div>
+  </div>
+
+  <!-- Transaction Details Table -->
+  <div class="info-section">
+    <div class="section-header">Advisory Notice</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="label-cell">Status Update 1</td>
+          <td>The sender's account has already been debited.</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Status Update 2</td>
+          <td>The transfer remains on compliance hold pending immediate verification.</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Action Required</td>
+          <td>The receiving bank is required to finalize all clearance obligations without delay.</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Compliance Warning</td>
+          <td>Non-compliance within the prescribed timeframe may result in escalation to higher regulatory review and potential suspension of this transaction.</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Authority</td>
+          <td>Chase Bank Los Angeles Division</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Urgency Level</td>
+          <td>Immediate Action Required</td>
+        </tr>
+        <tr>
+          <td class="label-cell">Next Steps</td>
+          <td>Treat this matter as urgent and confirm with our office once clearance has been executed so that settlement can proceed without interruption.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Important Notice -->
+  <div class="important-notice">
+    <strong>IMPORTANT:</strong> This directive is issued under the authority of Chase Bank Los Angeles Division.
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-section">
+    Sincerely,<br>
+    <strong>Chase Bank Management</strong><br>
+    Los Angeles Division<br><br>
+    This document contains confidential and proprietary information. Unauthorized disclosure is prohibited.<br>
+    © 2025 Chase Bank. All rights reserved.<br><br>
+    <small>Member FDIC | Equal Housing Lender</small>
+  </div>
+</div>
+```
+
+  </div>
+</body>
+</html>
